@@ -1410,3 +1410,110 @@ body {
     /* Модуль №6 - Елементи та валідація форм */
     /* Модуль №7 - Адаптивна верстка. Адаптивна графіка */
 }
+
+/**
+  |============================
+  | Forms
+  |============================
+*/
+
+/* Footer forms */
+.footer-form {
+    padding: 0;
+    margin: 0;
+    margin-left: 80px;
+}
+
+.footer-form-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--color-light);
+    padding-bottom: 16px;
+}
+
+.footer-form-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+}
+
+.footer-form-field {
+    width: 264px;
+    height: 40px;
+    position: relative;
+}
+
+.footer-form-input {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: 1px solid var(--color-light);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    outline: transparent;
+    color: var(--color-light);
+    padding: 0;
+    padding-left: 16px;
+}
+
+.footer-form-tag {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: var(--color-light);
+    position: absolute;
+    top: 50%;
+    left: 14px;
+    transform: translateY(-50%);
+    transform-origin: left center;
+    transition: transform var(--anim-medium);
+    background-color: var(--color-navy-blue);
+    padding: 0;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.footer-form-input:focus+.footer-form-tag,
+.footer-form-input:not(:placeholder-shown)+.footer-form-tag {
+    transform: translateY(-134%);
+}
+
+/* .footer-form-input:invalid+.footer-form-tag {
+    color: red;
+} */
+
+.footer-form-btn {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+    width: 165px;
+    height: 40px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--color-light);
+    background-color: var(--color-iris);
+    border-radius: 4px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 24px;
+    padding-right: 24px;
+    border: none;
+    transition: background-color var(--anim-medium);
+}
+
+.footer-form-btn:hover,
+.footer-form-btn:focus {
+    background-color: var(--color-ocean);
+}
+
+.footer-form-btn-icon {
+    fill: var(--color-light);
+}
