@@ -670,6 +670,7 @@
 
           <label class="modal-form-field" for="modal_comment">Comment</label>
           <textarea
+            class="modal-comment-area"
             name="modal_comment"
             id="modal_comment"
             rows="6"
@@ -677,14 +678,18 @@
             maxlength="200"
           ></textarea>
 
-          <label>
-            <input type="checkbox" name="modal_agreement" />
-            <span>
+          <label class="form-agreement">
+            <input class="form-agreement-checkbox" type="checkbox" name="modal_agreement" />
+            <svg class="form-agreement-icons" width="16" height="16">
+              <use class="unchecked" href="./images/icons.svg#unchecked"></use>
+              <use class="checked" href="./images/icons.svg#checked"></use>
+            </svg>
+            <span class="form-agreement-text">
               I accept the terms and conditions of the
-              <a href="">Privacy Policy</a>
+              <a class="form-agreement-link" href="">Privacy Policy</a>
             </span>
           </label>
-          <button class="modal-form-btn" type="submit">Send</button>
+          <button class="modal-form-btn hero-section-btn" type="submit">Send</button>
         </form>
       </div>
     </div>

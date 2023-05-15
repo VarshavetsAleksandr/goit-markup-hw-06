@@ -1517,3 +1517,157 @@ body {
 .footer-form-btn-icon {
     fill: var(--color-light);
 }
+
+/* Modal form */
+
+.modal-form {
+    padding-top: 72px;
+    padding-bottom: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.modal-form-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.02em;
+    padding-bottom: 16px;
+
+}
+
+.modal-form-field {
+    display: block;
+    padding-bottom: 4px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: var(--color-light-slate);
+}
+
+.modal-form-wrapper {
+    position: relative;
+    margin-bottom: 8px;
+    width: 360px;
+    height: 40px;
+}
+
+.modal-form-input {
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--color-navy-blue-modal);
+    border-radius: 4px;
+    padding: 0;
+    padding-left: 38px;
+    outline: none;
+    /* outline-color: transparent; */
+    /* transition: outline-color var(--anim-medium); */
+    transition: border-color var(--anim-medium);
+
+}
+
+.modal-form-input:focus {
+    /* outline-color: var(--color-iris); */
+    border-color: var(--color-iris);
+}
+
+.modal-form-input:not(:placeholder-shown):required:invalid {
+    /* outline-color: lightcoral; */
+    border-color: lightcoral;
+}
+
+.modal-form-input:not(:placeholder-shown):required:valid {
+    /* outline-color: lightgreen; */
+    border-color: lightgreen;
+}
+
+.modal-form-icon {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    fill: currentColor;
+    pointer-events: none;
+    transition: fill var(--anim-medium);
+}
+
+.modal-form-input:focus~.modal-form-icon {
+    fill: var(--color-iris);
+}
+
+.modal-form-input:not(:placeholder-shown):required:invalid+.modal-form-icon {
+    fill: lightcoral;
+}
+
+
+.modal-form-input:not(:placeholder-shown):required:valid+.modal-form-icon {
+    fill: lightgreen;
+}
+
+.modal-comment-area {
+    width: 360px;
+    height: 120px;
+    border: 1px solid var(--color-navy-blue-modal);
+    border-radius: 4px;
+    resize: none;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    outline: none;
+    color: var(--color-navy-blue);
+    margin-bottom: 16px;
+}
+
+.modal-comment-area:focus {
+    /* outline-color: var(--color-iris); */
+    border-color: var(--color-iris);
+}
+
+.modal-comment-area:not(:placeholder-shown) {
+    border-color: var(--color-iris);
+}
+
+.form-agreement {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 24px;
+}
+
+.form-agreement-checkbox {
+    appearance: none;
+}
+
+.form-agreement-icons {}
+
+.unchecked {
+    opacity: 1;
+    transition: opasity var(--anim-medium);
+}
+
+.checked {
+    opacity: 0;
+    transition: opacity var(--anim-medium);
+}
+
+.form-agreement-checkbox:checked+.form-agreement-icons>.unchecked {
+    opacity: 0;
+}
+
+.form-agreement-checkbox:checked+.form-agreement-icons>.checked {
+    opacity: 1;
+}
+
+.form-agreement-text {
+    user-select: none;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: var(--color-slate);
+    padding: 0;
+    padding-left: 8px;
+}
+
+.form-agreement-link {}
