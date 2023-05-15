@@ -1430,7 +1430,7 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--color-light);
-    padding-bottom: 16px;
+    margin-bottom: 16px;
 }
 
 .footer-form-wrapper {
@@ -1533,7 +1533,7 @@ body {
     line-height: 1.5;
     text-align: center;
     letter-spacing: 0.02em;
-    padding-bottom: 16px;
+    margin-bottom: 16px;
 
 }
 
@@ -1567,18 +1567,16 @@ body {
 
 }
 
+
 .modal-form-input:focus {
-    /* outline-color: var(--color-iris); */
     border-color: var(--color-iris);
 }
 
 .modal-form-input:not(:placeholder-shown):required:invalid {
-    /* outline-color: lightcoral; */
     border-color: lightcoral;
 }
 
 .modal-form-input:not(:placeholder-shown):required:valid {
-    /* outline-color: lightgreen; */
     border-color: lightgreen;
 }
 
@@ -1621,7 +1619,6 @@ body {
 }
 
 .modal-comment-area:focus {
-    /* outline-color: var(--color-iris); */
     border-color: var(--color-iris);
 }
 
@@ -1670,4 +1667,10 @@ body {
     padding-left: 8px;
 }
 
-.form-agreement-link {}
+.form-agreement-link {
+    color: var(--color-iris);
+}
+
+.valid-phone {}
+
+.valid-field {}
