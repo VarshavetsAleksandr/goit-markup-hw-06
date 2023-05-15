@@ -1483,10 +1483,6 @@ body {
     transform: translateY(-134%);
 }
 
-/* .footer-form-input:invalid+.footer-form-tag {
-    color: red;
-} */
-
 .footer-form-btn {
     display: flex;
     align-items: center;
@@ -1561,8 +1557,6 @@ body {
     padding: 0;
     padding-left: 38px;
     outline: none;
-    /* outline-color: transparent; */
-    /* transition: outline-color var(--anim-medium); */
     transition: border-color var(--anim-medium);
 
 }
