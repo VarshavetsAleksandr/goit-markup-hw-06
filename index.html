@@ -647,8 +647,11 @@
               name="modal_phone"
               id="modal_phone"
               required
+              pattern="[\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+              title="Формат має бути +38 0** *** ** **"
               placeholder="&nbsp;"
             />
+
             <svg class="modal-form-icon valid-phone" width="18" height="24" data-form-icon>
               <use href="./images/icons.svg#modal-phone"></use>
             </svg>
