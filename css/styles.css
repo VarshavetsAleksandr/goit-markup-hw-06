@@ -1345,6 +1345,10 @@ body {
     /* Модуль №6 - Елементи та валідація форм */
     /* Модуль №7 - Адаптивна верстка. Адаптивна графіка */
     /* opacity var(--anim-medium), */
+    padding-top: 72px;
+    padding-bottom: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
 }
 
 .backdrop.is-hidden .modal {
@@ -1403,7 +1407,6 @@ body {
 .modal-close-btn:hover .modal-close-icon,
 .modal-close-btn:focus .modal-close-icon {
     /* Модуль №2 - Селектори та колір. Текст та шрифти */
-    fill: #FFFFFF;
     /* Модуль №3 - Блокова бодель. Flexbox */
     /* Модуль №4 - Декоративні ефекти та елементи. Векторна графіка */
     /* Модуль №5 - Позиціоновані елементи. Переходи та анімація */
@@ -1418,9 +1421,7 @@ body {
 */
 
 /* Footer forms */
-.footer-form {
-    padding: 0;
-    margin: 0;
+.footer-form-wrapper {
     margin-left: 80px;
 }
 
@@ -1433,12 +1434,12 @@ body {
     margin-bottom: 16px;
 }
 
-.footer-form-wrapper {
+.footer-form {
     display: flex;
-    align-items: center;
     gap: 24px;
-
+    align-items: center;
 }
+
 
 .footer-form-field {
     width: 264px;
@@ -1516,12 +1517,7 @@ body {
 
 /* Modal form */
 
-.modal-form {
-    padding-top: 72px;
-    padding-bottom: 24px;
-    padding-left: 24px;
-    padding-right: 24px;
-}
+.modal-form {}
 
 .modal-form-title {
     font-weight: 500;
@@ -1535,7 +1531,7 @@ body {
 
 .modal-form-field {
     display: block;
-    padding-bottom: 4px;
+    margin-bottom: 4px;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
